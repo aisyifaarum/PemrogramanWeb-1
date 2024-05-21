@@ -1,0 +1,163 @@
+/* Style untuk navbar */
+.navbar {
+  background-color: #072154c5; /* Warna latar belakang navbar */
+  padding: 20px; /* Memberi jarak di dalam navbar */
+  text-align: center; /* Membuat teks berada di tengah */
+  font-family: Arial, sans-serif; /* Menentukan jenis font */
+}
+
+/* Style untuk teks di dalam navbar */
+.navbar h1 {
+  margin: 0; /* Menghilangkan margin default pada h1 */
+  font-size: 24px; /* Mengatur ukuran font */
+  color: #ecf1f4; /* Mengatur warna teks */
+}
+
+/* Style untuk menu horizontal */
+.menu {
+  background-color: #3587e6; /* Warna latar belakang menu */
+  padding: 10px 0; /* Memberi jarak atas dan bawah pada menu */
+}
+
+.menu ul {
+  list-style: none; /* Menghilangkan bullet pada list */
+  padding: 0; /* Menghilangkan padding pada ul */
+  margin: 0; /* Menghilangkan margin pada ul */
+  display: flex; /* Mengatur tampilan flex untuk membuat menu horizontal */
+  justify-content: center; /* Membuat menu berada di tengah secara horizontal */
+}
+
+.menu ul li {
+  margin: 0 15px; /* Memberi jarak antar item menu */
+}
+
+.menu ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #f9f9f9; /* Warna teks link */
+  font-size: 18px; /* Ukuran font link */
+  padding: 5px 10px; /* Memberi jarak dalam link */
+}
+
+/* Style untuk body */
+body {
+  background-color: #081d42; /* Warna latar belakang body */
+  font-family: Arial, sans-serif; /* Menentukan jenis font untuk seluruh body */
+  margin: 0; /* Menghilangkan margin default pada body */
+  padding: 0; /* Menghilangkan padding default pada body */
+  display: flex; /* Menggunakan flexbox untuk layout */
+  flex-direction: column; /* Menentukan arah stacking menjadi vertikal */
+  min-height: 100vh; /* Set minimum tinggi body agar selalu mengisi tinggi layar */
+}
+
+/* Konten Utama */
+.main-content {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  margin: 20px; /* Memberi jarak di sekitar konten utama */
+}
+
+/* Sidebar Kiri */
+.sidebar-left {
+  width: 250px; /* Lebar sidebar */
+  padding: 20px; /* Memberi jarak di dalam sidebar */
+  background-color: #388eb5; /* Warna latar belakang sidebar */
+  border-radius: 10px; /* Membuat sudut tidak lancip */
+}
+
+.sidebar-left h2 {
+  font-size: 20px; /* Ukuran font heading di sidebar */
+  color: #071a4d; /* Warna teks heading di sidebar */
+  margin-bottom: 15px; /* Memberi jarak di bawah heading */
+}
+
+.sidebar-left ul {
+  padding: 0; /* Menghilangkan padding pada ul */
+  margin: 0; /* Menghilangkan margin pada ul */
+  list-style: none; /* Menghilangkan tanda bullet */
+}
+.sidebar-left ul li {
+  margin-bottom: 10px; /* Memberi jarak di bawah setiap item */
+}
+
+.sidebar-left ul li a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #e5f2fc; /* Warna teks link */
+  display: block; /* Membuat link menempati seluruh lebar */
+  padding: 8px 15px; /* Memberi jarak di dalam link */
+  border-radius: 5px; /* Membuat sudut link tidak lancip */
+}
+
+/* Konten Kanan */
+.content-right {
+  flex: 1; /* Konten kanan akan mengisi ruang yang tersedia */
+  padding: 20px; /* Memberi jarak di dalam konten */
+  background-color: #156a9f; /* Warna latar belakang konten */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow untuk konten */
+  margin-left: 20px; /* Memberi jarak di sebelah kiri konten */
+}
+
+.content-right h2 {
+  font-size: 24px; /* Ukuran font heading di konten */
+  color: #f1efef; /* Warna teks heading di konten */
+}
+
+.news-image {
+  width: 75%; /* Lebar gambar 50% dari konten */
+  height: auto; /* Tinggi otomatis sesuai dengan aspek rasio gambar */
+}
+
+.content-right p {
+  font-size: 16px; /* Ukuran font paragraf di konten */
+  color: #000000; /* Warna teks paragraf di konten */
+  line-height: 1.5; /* Tinggi garis untuk paragraf */
+  margin-bottom: 20px; /* Memberi jarak di bawah paragraf */
+}
+
+/* Style untuk gambar dalam frame */
+.frame {
+  width: 100%; /* Lebar frame 100% dari konten */
+  padding-top: 177.78%; /* Rasio 9:16 (tinggi/lebar = 16/9 = 177.78%) */
+  position: relative; /* Membuat posisi relatif untuk anak-anak absolut */
+  overflow: hidden; /* Menyembunyikan bagian gambar yang melebihi batas frame */
+}
+
+/* Style untuk gambar di dalam frame */
+.frame img {
+  position: absolute; /* Membuat posisi absolut untuk gambar */
+  width: 100%; /* Lebar gambar 100% dari frame */
+  height: auto; /* Tinggi otomatis sesuai dengan aspek rasio gambar */
+  top: 0; /* Meletakkan gambar di bagian atas frame */
+  left: 0; /* Meletakkan gambar di bagian kiri frame */
+  object-fit: cover; /* Memastikan gambar mengisi frame sepenuhnya */
+}
+
+.read-more {
+  background-color: #c02d2d; /* Warna latar belakang tombol */
+  color: #0f92ba; /* Warna teks tombol */
+  border: none; /* Menghilangkan border tombol */
+  padding: 10px 20px; /* Memberi jarak di dalam tombol */
+  font-size: 16px; /* Ukuran font tombol */
+  border-radius: 5px; /* Membuat sudut tombol tidak lancip */
+  cursor: pointer; /* Menambahkan pointer pada tombol */
+  transition: background-color 0.3s ease; /* Efek transisi untuk background tombol */
+}
+
+/* Style untuk footer */
+.footer {
+  background-color: #06153a; /* Warna latar belakang footer */
+  color: #eaebed; /* Warna teks footer */
+  padding: 20px; /* Memberi jarak di dalam footer */
+  text-align: center; /* Membuat teks berada di tengah */
+}
+
+.footer p {
+  margin: 0; /* Menghilangkan margin pada teks */
+}
+
+/* Style untuk tautan footer */
+.footer a {
+  color: #2c6fb7; /* Warna teks tautan footer */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+P {
+  text-align: justify;
+}
